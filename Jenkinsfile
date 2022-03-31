@@ -28,7 +28,7 @@ pipeline {
     steps{
      sshagent(['avcs']) {
       sh "ssh -o StrictHostKeyChecking=no ec2-user@13.233.154.15"
-      sh "sudo docker run -p 8080:8080 -d --name tech-app aoudumbar24/tech:v4"
+      sh "sudo docker run -p 8080:8080 -d --name myapp aoudumbar24/tech:v4"
        }
      }
    }
