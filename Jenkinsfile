@@ -27,7 +27,7 @@ pipeline {
   stage('Run Container on Dev Server'){
     steps{
      sshagent(['avcs']) {
-      sh "ssh -o StrictHostKeyChecking=no ec2-user@13.233.154.15"
+      sh "ssh -o StrictHostKeyChecking=no ec2-user@65.0.179.45"
       sh "sudo docker run -p 8080:8080 -d --name myapp aoudumbar24/tech:v4"
        }
      }
