@@ -20,7 +20,7 @@ pipeline {
   stage('Push Docker Image'){
     steps{
       sh "sudo docker login -u aoudumbar24 -p qwer@1234"
-      sh "sudo docker tag aoudumbar/tech-app:2.0.0 aoudumbar24/tech:v4"
+      sh "sudo docker tag aoudumbar/tech-app1:3.0.0 aoudumbar24/tech:v4"
       sh "sudo docker push aoudumbar24/tech:v4"
        }
      }
